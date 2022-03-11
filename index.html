@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="">
+     <meta name="author" content="">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="js-alarm-clock.css">
+     <!-- <link rel="shortcut icon" href="./Screenshot 2022-03-08 102039.png" type="image/x-icon"> -->
+     <title>STOP⏱WATCH</title>
+</head>
+<body>
+     <div class="nav">
+          <div class="nav-menu">
+               <ul class="nav-menu-inner">
+                    <li><a href="#stopwatch">Stopwatch</a></li>
+                    <li><a href="#alarm">Alarm</a></li>
+                    <li><a href="#clocks">Clocks</a></li>
+          </div>
+          <div class="logo">Stop⏱watch</div>
+          <div class="navclock" >
+               <div class="time"id="clock">
+</div>
+          </div>
+     </div>
+     </div>
+     <div class="herosection">
+          <div class="herosection-inner">
+               <div class="herosection-inner-text">
+                    <h1>"The greatest amount of wasted time, is the time not getting started." <br>-Dawson Trotman</h1>  
+                    <div class="text-small">
+                         <div>
+                              Start a Stopwatch now,
+                         </div>
+                         <a href="#stopwatch"> Lets Go!</a>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="stopwatch" id="stopwatch">
+          <h1>Stopwatch</h1>
+          <div class="stopwatch-inner">
+               <div id="elapsed"><h1>0.00</h1></div>
+               <div class="stopwatch-inner-buttons">
+                    <button id="start">Start</button>
+                    <button id="stop">Stop</button>
+                    <button id="reset">Reset</button>
+               </div>
+          </div>
+     </div>
+     <div class="alarm" id="alarm">
+          <h1>Alarm</h1>
+                 <!-- (A) CURRENT TIME -->
+          <div class="alarm-inner">
+               <div id="ctime">
+                    <h1 class="header">THE CURRENT TIME</h1>
+                    <div class="square">
+                      <div class="digits" id="chr">00</div>
+                      <div class="text">HR</div>
+                    </div>
+                    <div class="square">
+                      <div class="digits" id="cmin">00</div>
+                      <div class="text">MIN</div>
+                    </div>
+                    <div class="square">
+                      <div class="digits" id="csec">00</div>
+                      <div class="text">SEC</div>
+                    </div>
+                  </div>
+               
+                  <!-- (B) SET ALARM -->
+                  <div id="tpick">
+                    <h1 class="header">SET ALARM</h1>
+                    <div id="tpick-h" class="square"></div>
+                    <div id="tpick-m" class="square"></div>
+                    <div id="tpick-s" class="square"></div>
+                    <input type="button" value="Set" id="tset"/>
+                    <input type="button" value="Reset" id="treset" disabled/>
+                  </div>
+                  </div>
+   </div>
+     <div class="clocks" id="clocks">
+          <h1>Clocks</h1>
+          <div class="clocks-inner">
+               <div class="clock" id="london">
+                    <H1>London</H1>
+                    <div id="utcClock"></div>
+               </div>
+               <div class="clock" id="paris">
+                    <H1>Paris</H1>
+                    <div id="parisClock"></div>
+               </div>
+               <div class="clock" id="newyork">
+                    <H1>New York</H1>
+                    <div id="newyorkClock"></div>
+               </div>
+               <div class="clock" id="india">
+                    <H1>India</H1>
+                    <div id="indiaClock"></div>
+               </div>
+               <div class="clock" id="tokyo">
+                    <H1>Tokyo</H1>
+                    <div id="tokyoClock"></div>
+               </div>
+               <div class="clock" id="hongkong">
+                    <H1>Hong Kong</H1>
+                    <div id="hongkongClock"></div>
+               </div>
+               <div class="clock" id="losangeles">
+                    <H1>Los Angeles</H1>
+                    <div id="losangelesClock"></div>
+               </div>
+               <div class="clock" id="moscow">
+                    <H1>Moscow</H1>
+                    <div id="moscowClock"></div>
+               </div>
+               <div class="clock" id="beijing">
+                    <H1>Beijing</H1>
+                    <div id="beijingClock"></div>
+                    </div>
+               <div class="clock" id="seoul">
+                    <H1>Seoul</H1>
+                    <div id="seoulClock"></div>
+               </div>
+               <div class="clock" id="sydney">
+                    <H1>Sydney</H1>
+                    <div id="sydneyClock"></div>
+
+          </div>
+     </div>
+     </div>
+<hr>
+<div class="footer">
+     <div class="copyright">
+          <p>&copy; Stopwatch by <a href="https://devdushyant.000webhostapp.com">Dushyant Singh</a></p>
+     </div>
+</body>
+<script src="navClock.js"></script>
+<script src="stopwatch.js"></script>
+<script src="alarm.js"></script>
+<script src="worldClock.js"></script>
+</html>
